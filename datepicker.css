@@ -1,0 +1,115 @@
+.simple-datepicker {
+	left: 10px;
+	position: absolute;
+	top: 10px;
+}
+
+.simple-datepicker {
+	background: #f5f5f5;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	color: #666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 5px;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	width: 238px;
+}
+
+.datepicker-month {
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.datepicker-month-title {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+	text-align: center;
+	width: 172px;
+}
+
+.datepicker-prev,
+.datepicker-next {
+	background: #fff;
+	border-radius: 3px;
+	color: #f8c901;
+	cursor: pointer;
+	font-size: 13px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	width: 28px;
+}
+
+.datepicker-prev:hover,
+.datepicker-next:hover {
+	background: #f8c901; 
+	color: #fff;
+}
+
+.datepicker-prev {
+	float: left;
+}
+
+.datepicker-next {
+	float: right;
+}
+
+.datepicker-clear {
+	clear: both;
+}
+
+.datepicker-days {
+	font-size: 14px;
+	padding: 5px 0;
+}
+
+.datepicker-weekdays {
+	font-size: 13px;
+	overflow: hidden;
+	padding: 5px 0;
+}
+
+.datepicker-weekdays-day {
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	width: 34px;
+}
+
+.datepicker-days-day,
+.datepicker-days-other-month {
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	float: left;
+	line-height: 20px;
+	margin: 2px;
+	padding: 5px 0;
+	text-align: center;
+	width: 30px;
+}
+
+.datepicker-days-day.selected {
+	background: #ccc;
+	color: #fff;
+}
+
+.datepicker-days-day:hover {
+	background: #f8c901;
+	color: #fff;
+}
+
+.datepicker-days-other-month {
+	background: transparent;
+}
+
+.datepicker-today {
+	color: #0fabfc;
+	font-weight: bold;
+}
