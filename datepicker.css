@@ -33,6 +33,22 @@
 	width: 172px;
 }
 
+.datepicker-month-title-year input {
+	border: 0;
+	border-radius: 3px;
+	color: #666;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+	margin-left: 5px;
+	outline: 0;
+	padding: 0 3px;
+	text-align: center;
+	vertical-align: middle;
+	width: 50px;
+}
+
 .datepicker-prev,
 .datepicker-next {
 	background: #fff;
