@@ -289,7 +289,7 @@ Datepicker.prototype._setup = function() {
     $('.datepicker-month-title-month', self._element).html(self._locale.months[self._date.month]);
 
     // show the year
-    $('.datepicker-month-title-year', self._element).html(self._date.year);
+    $('.datepicker-month-title-year input', self._element).val(self._date.year);
 
     // show the days of the week
     var html = '';
@@ -362,6 +362,17 @@ Datepicker.prototype._addEvents = function() {
         }
     );
 
+    // year
+    $('.datepicker-month-title-year input', self._element).keyup(function() {
+        if($(this).val() > 999 && $(this).val() < 10000 && $(this).val() > 0) {
+            self._changeYear($(this).val());
+            $('.datepicker-days', self._element).show();
+        }
+        else {
+            $('.datepicker-days', self._element).hide();
+        }
+    });
+
     // day
     $('.datepicker-days-day').unbind().click(
         function() {
@@ -382,6 +393,20 @@ Datepicker.prototype._addEvents = function() {
     return self;
 }
 
+/*
+    Change year
+*/
+Datepicker.prototype._changeYear = function(year) {
+    var self = this;
+
+    self._dateObject.setDate(1);
+    self._dateObject.setFullYear(year);
+
+    self._setup();
+    self._addEvents();
+
+    return self;
+}
 
 /*
     Change month
