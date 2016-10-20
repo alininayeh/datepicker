@@ -6,7 +6,9 @@ var htmlTemplate = {
 							'<span class="datepicker-month-title">' +
 								'<span class="datepicker-month-title-month"></span>' +
 								'&nbsp;' +
-								'<span class="datepicker-month-title-year"></span>' +
+								'<span class="datepicker-month-title-year">' +
+									'<input type="number" />' +
+								'</span>' +
 							'</span>' +
 							'<span class="datepicker-next">&#x25B6;</span>' +
 							'<div class="datepicker-clear"></div>' +
